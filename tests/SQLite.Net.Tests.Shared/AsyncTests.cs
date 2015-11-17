@@ -106,7 +106,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
         public async Task FindAsyncWithExpression()
         {
             // create...
@@ -131,8 +130,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task FindAsyncWithExpressionNull()
         {
             // connect and insert...
@@ -147,8 +144,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task GetAsync()
         {
             // create...
@@ -173,8 +168,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task StressAsync()
         {
             const int defaultBusyTimeout = 100;
@@ -274,8 +267,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestAsyncGetWithExpression()
         {
             SQLiteAsyncConnection conn = GetAsyncConnection();
@@ -297,8 +288,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestAsyncTableElementAtAsync()
         {
             SQLiteAsyncConnection conn = GetAsyncConnection();
@@ -322,8 +311,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestAsyncTableOrderBy()
         {
             SQLiteAsyncConnection conn = GetAsyncConnection();
@@ -345,8 +332,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestAsyncTableOrderByDescending()
         {
             SQLiteAsyncConnection conn = GetAsyncConnection();
@@ -368,8 +353,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestAsyncTableThenBy()
         {
             SQLiteAsyncConnection conn = GetAsyncConnection();
@@ -396,8 +379,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestAsyncTableThenByDescending()
         {
             SQLiteAsyncConnection conn = GetAsyncConnection();
@@ -425,8 +406,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestAsyncTableQueryCountAsync()
         {
             SQLiteAsyncConnection conn = GetAsyncConnection();
@@ -448,8 +427,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestAsyncTableQuerySkip()
         {
             SQLiteAsyncConnection conn = GetAsyncConnection();
@@ -474,8 +451,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestAsyncTableQueryTake()
         {
             SQLiteAsyncConnection conn = GetAsyncConnection();
@@ -500,8 +475,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestAsyncTableQueryToFirstAsyncFound()
         {
             SQLiteAsyncConnection conn = GetAsyncConnection();
@@ -520,8 +493,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestAsyncTableQueryToFirstAsyncMissing()
         {
             SQLiteAsyncConnection conn = GetAsyncConnection();
@@ -537,8 +508,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestAsyncTableQueryToFirstOrDefaultAsyncFound()
         {
             SQLiteAsyncConnection conn = GetAsyncConnection();
@@ -557,8 +526,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestAsyncTableQueryToFirstOrDefaultAsyncMissing()
         {
             SQLiteAsyncConnection conn = GetAsyncConnection();
@@ -577,8 +544,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestAsyncTableQueryToListAsync()
         {
             SQLiteAsyncConnection conn = GetAsyncConnection();
@@ -598,8 +563,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestAsyncTableQueryWhereOperation()
         {
             SQLiteAsyncConnection conn = GetAsyncConnection();
@@ -619,8 +582,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestCreateTableAsync()
         {
             SQLiteAsyncConnection conn = GetAsyncConnection();
@@ -640,8 +601,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestDeleteAsync()
         {
             // create...
@@ -667,8 +626,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestDropTableAsync()
         {
             SQLiteAsyncConnection conn = GetAsyncConnection();
@@ -688,8 +645,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestExecuteAsync()
         {
             // connect...
@@ -711,8 +666,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestExecuteScalar()
         {
             // connect...
@@ -725,8 +678,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestFindAsyncItemMissing()
         {
             // connect and insert...
@@ -741,8 +692,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestFindAsyncItemPresent()
         {
             // create...
@@ -765,8 +714,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestInsertAllAsync()
         {
             // create a bunch of customers...
@@ -800,8 +747,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestInsertAsync()
         {
             // create...
@@ -827,8 +772,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestInsertOrReplaceAllAsync()
         {
             // create a bunch of customers...
@@ -887,8 +830,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestInsertOrReplaceAsync()
         {
             // create...
@@ -938,8 +879,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestInsertOrIgnoreAllAsync ()
         {
             const string originalFirstName = "foo";
@@ -996,8 +935,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestInsertOrIgnoreAsync ()
         {
             const string originalFirstName = "foo";
@@ -1046,8 +983,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestQueryAsync()
         {
             // connect...
@@ -1076,8 +1011,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestRunInTransactionAsync()
         {
             // connect...
@@ -1113,8 +1046,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestTableAsync()
         {
             // connect...
@@ -1152,8 +1083,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestUpdateAsync()
         {
             // create...
@@ -1183,8 +1112,6 @@ namespace SQLite.Net.Tests
         }
 
         [Test]
-        [MaxTime(Int32.MaxValue)]
-
         public async Task TestGetMappingAsync()
         {
             // connect...
