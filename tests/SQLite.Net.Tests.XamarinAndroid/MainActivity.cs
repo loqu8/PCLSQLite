@@ -2,21 +2,19 @@
 using Android.App;
 using Android.OS;
 using Xamarin.Android.NUnitLite;
+using NUnit.Runner;
 
 namespace SQLite.Net.Tests.XamarinAndroid
 {
 	[Activity (Label = "SQLite.Net.Tests.XamarinAndroid", MainLauncher = true)]
 	public class MainActivity : TestSuiteActivity
 	{
-		protected override void OnCreate (Bundle bundle)
+		protected override void OnCreate(Bundle bundle)
 		{
-			// tests can be inside the main assembly
-			AddTest (Assembly.GetExecutingAssembly ());
-			// or in any reference assemblies
-			// AddTest (typeof (Your.Library.TestClass).Assembly);
+			base.OnCreate(bundle);
 
-			// Once you called base.OnCreate(), you cannot add more assemblies.
-			base.OnCreate (bundle);
+			global::Xamarin.Forms.Forms.Init(this, bundle);
+			LoadApplication(new NUnit.Runner.App());
 		}
 	}
 }

@@ -26,6 +26,9 @@ namespace SQLite.Net.Tests
         [Test]
         public void DynamicSelect()
         {
+#if __IOS__ || __DROID__
+			Assert.Ignore("The 'dynamic' keyword is not supported in iOS or Android");
+#else
             var result = _db.Query("SELECT * FROM Product");
             Assert.AreEqual(3, result.Count);
 
@@ -36,16 +39,22 @@ namespace SQLite.Net.Tests
             var names = result.Select(r => r.Name);
             var isTwo = names.Contains("Two");
             Assert.IsTrue(isTwo);
+#endif
         }
 
         [Test]
         public void CheckExpandoObject()
         {
+
+#if __IOS__ || __DROID__
+			Assert.Ignore("The 'dynamic' keyword is not supported in iOS or Android");
+#else
             dynamic obj = new ExpandoObject();
 //            obj.AddProperty("Name", "potato");
             obj.Name = "potato";
             var name = obj.Name;
             Assert.AreEqual("potato", name);
+#endif
         }
     }
 }
