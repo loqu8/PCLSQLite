@@ -1,25 +1,25 @@
 PCLSQLite
 =========
 
-PCLSQLite is an [open source library][1] that provides portable class library authors with SQLite APIs that invoke platform-specific calls automatically. It is a fork of SQLite.Net-PCL (https://github.com/oysteinkrog/SQLite.Net-PCL) which in turn is a fork of the original sqlite-net library (https://github.com/praeclarum/sqlite-net). Additional inspiration comes from PCLCrypto and PCLStorage. In contrast to SQLite.Net-PCL, this project uses Shared Libraries and #if-based conditional code to improve maintainability as changes in the various platforms have now allowed a significant amount of overlap between Windows Desktop, Universal Windows Platform, Xamarin iOS (Universal) and Xamarin Android.
+PCLSQLite is an [open source library][1] that provides portable class library authors with SQLite APIs that invoke platform-specific calls automatically. In contrast to SQLite.Net-PCL, this project uses Shared Libraries and #if-based conditional code to improve maintainability.
+
 
 Pull requests are welcome to the 'dev' branch. Please add unit tests as appropriate.
 
+### Features
 
-## Documentation below requires updating...
+### Installation
 
-# Versioning
+### Documentation
 
-This project uses semantic versioning.
+### FAQ
 
-# API Changes
+### Acknowledgements
 
-As part of the cleanup there are now some API changes.
-For the most part I hope these are self-explanatory, but here is a non-exhaustive list of changes.
+PCLSQLite is a fork of SQLite.Net-PCL(https://github.com/oysteinkrog/SQLite.Net-PCL) which in turn is a fork of the original sqlite-net library(https://github.com/praeclarum/sqlite-net). Portions of the code have also previously been contributed to MvvmCross-SQLite(https://github.com/MvvmCross/MvvmCross-SQLite).
 
-## SQLiteConnection
-You now have to pass in an implementation of ISQlitePlatform in the SQLiteConnectionWithLock and SQLiteConnection constructors.
-The correct platform implementation is automatically added to the project. 
+
+#### Work on README after this line
 
 At the moment these platforms are supported:
 - Win32 (bundles sqlite binaries for windows, works on both x86 and x64 automatically) (very well tested)
