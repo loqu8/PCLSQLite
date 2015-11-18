@@ -60,7 +60,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLite.Net.Tests.UWP", "tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLite.Net.Tests.XamarinAndroid", "tests\SQLite.Net.Tests.XamarinAndroid\SQLite.Net.Tests.XamarinAndroid.csproj", "{B1D3961D-D461-46D6-AE51-16DE803BC2F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLite.Net.Tests.XamarinIOS", "tests\SQLite.Net.Tests.XamarinIOS\SQLite.Net.Tests.XamarinIOS.csproj", "{D9947CEE-F584-4DA0-8D35-ECD2386842D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLite.Net.Tests.XamarinIOS.Unified", "tests\SQLite.Net.Tests.XamarinIOS\SQLite.Net.Tests.XamarinIOS.Unified.csproj", "{D9947CEE-F584-4DA0-8D35-ECD2386842D7}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
