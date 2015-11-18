@@ -1,12 +1,12 @@
-# Fork
+PCLSQLite
+=========
 
-This is a fork of the original sqlite-net library (https://github.com/praeclarum/sqlite-net), which aims to improve the code quality by using modern technologies such as PCL (portable class library).
+PCLSQLite is an [open source library][1] that provides portable class library authors with SQLite APIs that invoke platform-specific calls automatically. It is a fork of SQLite.Net-PCL (https://github.com/oysteinkrog/SQLite.Net-PCL) which in turn is a fork of the original sqlite-net library (https://github.com/praeclarum/sqlite-net). Additional inspiration comes from PCLCrypto and PCLStorage. In contrast to SQLite.Net-PCL, this project uses Shared Libraries and #if-based conditional code to improve maintainability as changes in the various platforms have now allowed a significant amount of overlap between Windows Desktop, Universal Windows Platform, Xamarin iOS (Universal) and Xamarin Android.
 
-The project will avoid the use of #if-based conditional code and use platform-specific code injection instead.
+Pull requests are welcome to the 'dev' branch. Please add unit tests as appropriate.
 
-I welcome pull requests, but keep in mind that this library is in heavy use and all changes must be:
-- Backwards-compatible (don't change database defaults).
-- Well tested (please add unit tests).
+
+## Documentation below requires updating...
 
 # Versioning
 
@@ -209,3 +209,4 @@ Another helpful method is `ExecuteScalarAsync`. This allows you to return a scal
 		});
 
 
+ [1]: http://github.com/loqu8/pclsqlite
